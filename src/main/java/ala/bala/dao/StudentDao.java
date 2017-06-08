@@ -22,4 +22,18 @@ public class StudentDao {
 	public Collection<Student> getAllStudents() {
 		return students.values();
 	}
+	
+	public Student getStudentById(int id) {
+		return students.get(id);
+	}
+
+	public void removeStudentById(int id) {
+		students.remove(id);
+	}
+	
+	public void updateStudent(Student student) {
+		Student existingStudent = students.get(student.getId());
+		existingStudent.setName(student.getName());
+		existingStudent.setCourse(student.getCourse());
+	}
 }
