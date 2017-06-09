@@ -29,4 +29,8 @@ public class StudentService {
 	public void updateStudent(Student student) {
 		studentDao.updateStudent(student);
 	}
+
+	public void insertStudent(Student student) {
+		studentDao.insertStudent(student);
+	}
 }
