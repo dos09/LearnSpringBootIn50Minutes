@@ -50,13 +50,13 @@ public class StudentController {
 	 */
 	@RequestMapping(method = RequestMethod.PUT, consumes = MediaType.APPLICATION_JSON_VALUE)
 	public void updateStudent(@RequestBody Student student) {
-		System.out.println("Update student with id = " + student.getId());
+		System.out.println("Update student: " + student);
 		studentService.updateStudent(student);
 	}
 	
 	@RequestMapping(method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
 	public void insertStudent(@RequestBody Student student) {
-		System.out.println("Add student with id = " + student.getId());
+		System.out.println("Add student: " + student);
 		studentService.insertStudent(student);
 	}
 	

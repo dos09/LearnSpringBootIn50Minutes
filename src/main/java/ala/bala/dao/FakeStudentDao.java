@@ -10,7 +10,7 @@ import org.springframework.stereotype.Repository;
 import ala.bala.entity.Student;
 
 @Repository
-@Qualifier("fakeData")
+@Qualifier("FakeData")
 public class FakeStudentDao implements StudentDao {
 	private static Map<Integer, Student> students;
 	

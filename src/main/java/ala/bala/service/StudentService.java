@@ -16,7 +16,7 @@ public class StudentService {
 	// when more than one implementations of StudentDao interface exist, must
 	// tell which one to use, the used qualifier must be present in the
 	// implementation class we are going to use
-	@Qualifier("fakeData")
+	@Qualifier("MySQLData") //FakeData
 	private StudentDao studentDao;
 
 	public Collection<Student> getAllStudents() {

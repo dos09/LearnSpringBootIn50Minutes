@@ -18,4 +18,6 @@ dependencies {
 	compile("org.springframework.boot:spring-boot-starter-web") //unites some basic dependencies
 	compile("javax.servlet:jstl")
 	compile("org.apache.tomcat.embed:tomcat-embed-jasper") //for jsp compilation
+	compile("org.springframework.boot:spring-boot-starter-jdbc")
+	compile("mysql:mysql-connector-java")
 }
